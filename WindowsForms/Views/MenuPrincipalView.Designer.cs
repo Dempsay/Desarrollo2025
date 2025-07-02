@@ -28,61 +28,187 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            menuStrip1 = new MenuStrip();
+            iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
+            SubmenuAppClima = new FontAwesome.Sharp.IconMenuItem();
+            iconMenuItem3 = new FontAwesome.Sharp.IconMenuItem();
+            SubmenuFormularioFuentes = new FontAwesome.Sharp.IconMenuItem();
+            SubmenuJuegos = new FontAwesome.Sharp.IconMenuItem();
+            SubmenuProcesadores = new FontAwesome.Sharp.IconMenuItem();
+            iconMenuItem4 = new FontAwesome.Sharp.IconMenuItem();
+            SubmenuFormPeliculasApi = new FontAwesome.Sharp.IconMenuItem();
+            SubmenuFormPeliculasADO = new FontAwesome.Sharp.IconMenuItem();
+            iconMenuItem2 = new FontAwesome.Sharp.IconMenuItem();
+            SubmenuSalirDelSistema = new FontAwesome.Sharp.IconMenuItem();
+            toolStripSeparator1 = new ToolStripSeparator();
+            SubmenuAcercaDe = new FontAwesome.Sharp.IconMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // button1
+            // menuStrip1
             // 
-            button1.Anchor = AnchorStyles.None;
-            button1.Location = new Point(277, 130);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 0;
-            button1.Text = "&button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            menuStrip1.ImageScalingSize = new Size(24, 24);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { iconMenuItem1, iconMenuItem2 });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(1113, 33);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
             // 
-            // button2
+            // iconMenuItem1
             // 
-            button2.Anchor = AnchorStyles.None;
-            button2.Location = new Point(279, 203);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 34);
-            button2.TabIndex = 1;
-            button2.Text = "b&utton2";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            iconMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { SubmenuAppClima, iconMenuItem3, iconMenuItem4 });
+            iconMenuItem1.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconMenuItem1.IconColor = Color.Black;
+            iconMenuItem1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconMenuItem1.Name = "iconMenuItem1";
+            iconMenuItem1.Size = new Size(118, 29);
+            iconMenuItem1.Text = "Principal";
             // 
-            // button3
+            // SubmenuAppClima
             // 
-            button3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            button3.Location = new Point(277, 270);
-            button3.Name = "button3";
-            button3.Size = new Size(112, 34);
-            button3.TabIndex = 2;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            SubmenuAppClima.IconChar = FontAwesome.Sharp.IconChar.None;
+            SubmenuAppClima.IconColor = Color.Black;
+            SubmenuAppClima.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            SubmenuAppClima.Name = "SubmenuAppClima";
+            SubmenuAppClima.Size = new Size(270, 34);
+            SubmenuAppClima.Text = "App Clima";
+            SubmenuAppClima.Click += SubmenuAppClima_Click;
+            // 
+            // iconMenuItem3
+            // 
+            iconMenuItem3.DropDownItems.AddRange(new ToolStripItem[] { SubmenuFormularioFuentes, SubmenuJuegos, SubmenuProcesadores });
+            iconMenuItem3.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconMenuItem3.IconColor = Color.Black;
+            iconMenuItem3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconMenuItem3.Name = "iconMenuItem3";
+            iconMenuItem3.Size = new Size(270, 34);
+            iconMenuItem3.Text = "Tareas";
+            // 
+            // SubmenuFormularioFuentes
+            // 
+            SubmenuFormularioFuentes.IconChar = FontAwesome.Sharp.IconChar.None;
+            SubmenuFormularioFuentes.IconColor = Color.Black;
+            SubmenuFormularioFuentes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            SubmenuFormularioFuentes.Name = "SubmenuFormularioFuentes";
+            SubmenuFormularioFuentes.Size = new Size(270, 34);
+            SubmenuFormularioFuentes.Text = "Formulario Fuentes";
+            SubmenuFormularioFuentes.Click += SubmenuFormularioFuentes_Click;
+            // 
+            // SubmenuJuegos
+            // 
+            SubmenuJuegos.IconChar = FontAwesome.Sharp.IconChar.None;
+            SubmenuJuegos.IconColor = Color.Black;
+            SubmenuJuegos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            SubmenuJuegos.Name = "SubmenuJuegos";
+            SubmenuJuegos.Size = new Size(270, 34);
+            SubmenuJuegos.Text = "Juegos";
+            SubmenuJuegos.Click += SubmenuJuegos_Click;
+            // 
+            // SubmenuProcesadores
+            // 
+            SubmenuProcesadores.IconChar = FontAwesome.Sharp.IconChar.None;
+            SubmenuProcesadores.IconColor = Color.Black;
+            SubmenuProcesadores.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            SubmenuProcesadores.Name = "SubmenuProcesadores";
+            SubmenuProcesadores.Size = new Size(270, 34);
+            SubmenuProcesadores.Text = "Procesadores";
+            SubmenuProcesadores.Click += SubmenuProcesadores_Click;
+            // 
+            // iconMenuItem4
+            // 
+            iconMenuItem4.DropDownItems.AddRange(new ToolStripItem[] { SubmenuFormPeliculasApi, SubmenuFormPeliculasADO });
+            iconMenuItem4.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconMenuItem4.IconColor = Color.Black;
+            iconMenuItem4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconMenuItem4.Name = "iconMenuItem4";
+            iconMenuItem4.Size = new Size(270, 34);
+            iconMenuItem4.Text = "Trabajos en clase";
+            // 
+            // SubmenuFormPeliculasApi
+            // 
+            SubmenuFormPeliculasApi.IconChar = FontAwesome.Sharp.IconChar.None;
+            SubmenuFormPeliculasApi.IconColor = Color.Black;
+            SubmenuFormPeliculasApi.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            SubmenuFormPeliculasApi.Name = "SubmenuFormPeliculasApi";
+            SubmenuFormPeliculasApi.Size = new Size(352, 34);
+            SubmenuFormPeliculasApi.Text = "Formulario Películas(Api)";
+            SubmenuFormPeliculasApi.Click += SubmenuFormPeliculasApi_Click;
+            // 
+            // SubmenuFormPeliculasADO
+            // 
+            SubmenuFormPeliculasADO.IconChar = FontAwesome.Sharp.IconChar.None;
+            SubmenuFormPeliculasADO.IconColor = Color.Black;
+            SubmenuFormPeliculasADO.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            SubmenuFormPeliculasADO.Name = "SubmenuFormPeliculasADO";
+            SubmenuFormPeliculasADO.Size = new Size(352, 34);
+            SubmenuFormPeliculasADO.Text = "Formulario Películas(ADO Net)";
+            SubmenuFormPeliculasADO.Click += SubmenuFormPeliculasADO_Click;
+            // 
+            // iconMenuItem2
+            // 
+            iconMenuItem2.DropDownItems.AddRange(new ToolStripItem[] { SubmenuSalirDelSistema, toolStripSeparator1, SubmenuAcercaDe });
+            iconMenuItem2.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconMenuItem2.IconColor = Color.Black;
+            iconMenuItem2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconMenuItem2.Name = "iconMenuItem2";
+            iconMenuItem2.Size = new Size(85, 29);
+            iconMenuItem2.Text = "Salir";
+            // 
+            // SubmenuSalirDelSistema
+            // 
+            SubmenuSalirDelSistema.IconChar = FontAwesome.Sharp.IconChar.None;
+            SubmenuSalirDelSistema.IconColor = Color.Black;
+            SubmenuSalirDelSistema.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            SubmenuSalirDelSistema.Name = "SubmenuSalirDelSistema";
+            SubmenuSalirDelSistema.Size = new Size(241, 34);
+            SubmenuSalirDelSistema.Text = "Salir del sistema";
+            SubmenuSalirDelSistema.Click += SubMenuSalirDelSistema_Click;
+            // 
+            // toolStripSeparator1
+            // 
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(238, 6);
+            // 
+            // SubmenuAcercaDe
+            // 
+            SubmenuAcercaDe.IconChar = FontAwesome.Sharp.IconChar.None;
+            SubmenuAcercaDe.IconColor = Color.Black;
+            SubmenuAcercaDe.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            SubmenuAcercaDe.Name = "SubmenuAcercaDe";
+            SubmenuAcercaDe.Size = new Size(241, 34);
+            SubmenuAcercaDe.Text = "Acerca de...";
             // 
             // MenuPrincipalView
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(679, 478);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            ClientSize = new Size(1113, 559);
+            Controls.Add(menuStrip1);
             Name = "MenuPrincipalView";
-            Text = "Form1";
+            Text = "Pruebas varias en Programación I - 2025";
+            WindowState = FormWindowState.Maximized;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private MenuStrip menuStrip1;
+        private FontAwesome.Sharp.IconMenuItem iconMenuItem1;
+        private FontAwesome.Sharp.IconMenuItem iconMenuItem2;
+        private FontAwesome.Sharp.IconMenuItem SubmenuSalirDelSistema;
+        private FontAwesome.Sharp.IconMenuItem SubmenuAppClima;
+        private ToolStripSeparator toolStripSeparator1;
+        private FontAwesome.Sharp.IconMenuItem SubmenuAcercaDe;
+        private FontAwesome.Sharp.IconMenuItem iconMenuItem3;
+        private FontAwesome.Sharp.IconMenuItem SubmenuFormularioFuentes;
+        private FontAwesome.Sharp.IconMenuItem iconMenuItem4;
+        private FontAwesome.Sharp.IconMenuItem SubmenuFormPeliculasApi;
+        private FontAwesome.Sharp.IconMenuItem SubmenuFormPeliculasADO;
+        private FontAwesome.Sharp.IconMenuItem SubmenuJuegos;
+        private FontAwesome.Sharp.IconMenuItem SubmenuProcesadores;
     }
 }

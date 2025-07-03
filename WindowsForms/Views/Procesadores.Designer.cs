@@ -51,6 +51,7 @@
             label2 = new Label();
             BtnCancelar = new FontAwesome.Sharp.IconButton();
             BtnGuardar = new FontAwesome.Sharp.IconButton();
+            label7 = new Label();
             TabControl.SuspendLayout();
             TabPageLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)GridProcesadores).BeginInit();
@@ -62,10 +63,11 @@
             TabControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             TabControl.Controls.Add(TabPageLista);
             TabControl.Controls.Add(TabPageAgregarEditar);
-            TabControl.Location = new Point(16, 67);
+            TabControl.Location = new Point(11, 40);
+            TabControl.Margin = new Padding(2, 2, 2, 2);
             TabControl.Name = "TabControl";
             TabControl.SelectedIndex = 0;
-            TabControl.Size = new Size(1256, 560);
+            TabControl.Size = new Size(879, 336);
             TabControl.TabIndex = 0;
             // 
             // TabPageLista
@@ -78,10 +80,11 @@
             TabPageLista.Controls.Add(TxtBuscar);
             TabPageLista.Controls.Add(label1);
             TabPageLista.Controls.Add(GridProcesadores);
-            TabPageLista.Location = new Point(4, 34);
+            TabPageLista.Location = new Point(4, 24);
+            TabPageLista.Margin = new Padding(2, 2, 2, 2);
             TabPageLista.Name = "TabPageLista";
-            TabPageLista.Padding = new Padding(3);
-            TabPageLista.Size = new Size(1248, 522);
+            TabPageLista.Padding = new Padding(2, 2, 2, 2);
+            TabPageLista.Size = new Size(871, 308);
             TabPageLista.TabIndex = 0;
             TabPageLista.Text = "Lista de Procesadores";
             TabPageLista.UseVisualStyleBackColor = true;
@@ -94,9 +97,10 @@
             BtnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             BtnSalir.IconSize = 40;
             BtnSalir.ImageAlign = ContentAlignment.MiddleLeft;
-            BtnSalir.Location = new Point(1073, 458);
+            BtnSalir.Location = new Point(751, 275);
+            BtnSalir.Margin = new Padding(2, 2, 2, 2);
             BtnSalir.Name = "BtnSalir";
-            BtnSalir.Size = new Size(135, 44);
+            BtnSalir.Size = new Size(94, 26);
             BtnSalir.TabIndex = 12;
             BtnSalir.Text = "Salir";
             BtnSalir.TextAlign = ContentAlignment.MiddleRight;
@@ -111,9 +115,10 @@
             BtnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             BtnEliminar.IconSize = 40;
             BtnEliminar.ImageAlign = ContentAlignment.MiddleLeft;
-            BtnEliminar.Location = new Point(1073, 203);
+            BtnEliminar.Location = new Point(751, 122);
+            BtnEliminar.Margin = new Padding(2, 2, 2, 2);
             BtnEliminar.Name = "BtnEliminar";
-            BtnEliminar.Size = new Size(135, 50);
+            BtnEliminar.Size = new Size(94, 30);
             BtnEliminar.TabIndex = 11;
             BtnEliminar.Text = "Eliminar";
             BtnEliminar.TextAlign = ContentAlignment.MiddleRight;
@@ -128,9 +133,10 @@
             BtnModificar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             BtnModificar.IconSize = 40;
             BtnModificar.ImageAlign = ContentAlignment.MiddleLeft;
-            BtnModificar.Location = new Point(1073, 142);
+            BtnModificar.Location = new Point(751, 85);
+            BtnModificar.Margin = new Padding(2, 2, 2, 2);
             BtnModificar.Name = "BtnModificar";
-            BtnModificar.Size = new Size(135, 44);
+            BtnModificar.Size = new Size(94, 26);
             BtnModificar.TabIndex = 10;
             BtnModificar.Text = "Modificar";
             BtnModificar.TextAlign = ContentAlignment.MiddleRight;
@@ -145,9 +151,10 @@
             BtnAgregar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             BtnAgregar.IconSize = 40;
             BtnAgregar.ImageAlign = ContentAlignment.MiddleLeft;
-            BtnAgregar.Location = new Point(1073, 75);
+            BtnAgregar.Location = new Point(751, 45);
+            BtnAgregar.Margin = new Padding(2, 2, 2, 2);
             BtnAgregar.Name = "BtnAgregar";
-            BtnAgregar.Size = new Size(135, 46);
+            BtnAgregar.Size = new Size(94, 28);
             BtnAgregar.TabIndex = 9;
             BtnAgregar.Text = "Agregar";
             BtnAgregar.TextAlign = ContentAlignment.MiddleRight;
@@ -161,9 +168,10 @@
             BtnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             BtnBuscar.IconSize = 30;
             BtnBuscar.ImageAlign = ContentAlignment.MiddleLeft;
-            BtnBuscar.Location = new Point(504, 20);
+            BtnBuscar.Location = new Point(353, 12);
+            BtnBuscar.Margin = new Padding(2, 2, 2, 2);
             BtnBuscar.Name = "BtnBuscar";
-            BtnBuscar.Size = new Size(97, 31);
+            BtnBuscar.Size = new Size(68, 19);
             BtnBuscar.TabIndex = 8;
             BtnBuscar.Text = "Buscar";
             BtnBuscar.TextAlign = ContentAlignment.MiddleRight;
@@ -172,18 +180,20 @@
             // 
             // TxtBuscar
             // 
-            TxtBuscar.Location = new Point(101, 20);
+            TxtBuscar.Location = new Point(71, 12);
+            TxtBuscar.Margin = new Padding(2, 2, 2, 2);
             TxtBuscar.Name = "TxtBuscar";
-            TxtBuscar.Size = new Size(376, 31);
+            TxtBuscar.Size = new Size(264, 23);
             TxtBuscar.TabIndex = 2;
             TxtBuscar.TextChanged += TxtBuscar_TextChanged;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(16, 20);
+            label1.Location = new Point(11, 12);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(67, 25);
+            label1.Size = new Size(45, 15);
             label1.TabIndex = 1;
             label1.Text = "Buscar:";
             // 
@@ -193,11 +203,12 @@
             GridProcesadores.AllowUserToDeleteRows = false;
             GridProcesadores.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             GridProcesadores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            GridProcesadores.Location = new Point(16, 65);
+            GridProcesadores.Location = new Point(11, 39);
+            GridProcesadores.Margin = new Padding(2, 2, 2, 2);
             GridProcesadores.Name = "GridProcesadores";
             GridProcesadores.ReadOnly = true;
             GridProcesadores.RowHeadersWidth = 62;
-            GridProcesadores.Size = new Size(1005, 451);
+            GridProcesadores.Size = new Size(704, 271);
             GridProcesadores.TabIndex = 0;
             GridProcesadores.SelectionChanged += GridProcesadores_SelectionChanged;
             // 
@@ -215,91 +226,102 @@
             TabPageAgregarEditar.Controls.Add(label2);
             TabPageAgregarEditar.Controls.Add(BtnCancelar);
             TabPageAgregarEditar.Controls.Add(BtnGuardar);
-            TabPageAgregarEditar.Location = new Point(4, 34);
+            TabPageAgregarEditar.Location = new Point(4, 24);
+            TabPageAgregarEditar.Margin = new Padding(2, 2, 2, 2);
             TabPageAgregarEditar.Name = "TabPageAgregarEditar";
-            TabPageAgregarEditar.Padding = new Padding(3);
-            TabPageAgregarEditar.Size = new Size(1248, 522);
+            TabPageAgregarEditar.Padding = new Padding(2, 2, 2, 2);
+            TabPageAgregarEditar.Size = new Size(871, 308);
             TabPageAgregarEditar.TabIndex = 1;
             TabPageAgregarEditar.Text = "Agregar/Editar";
             TabPageAgregarEditar.UseVisualStyleBackColor = true;
             // 
             // TxtSufijo
             // 
-            TxtSufijo.Location = new Point(277, 230);
+            TxtSufijo.Location = new Point(194, 138);
+            TxtSufijo.Margin = new Padding(2, 2, 2, 2);
             TxtSufijo.Name = "TxtSufijo";
-            TxtSufijo.Size = new Size(309, 31);
+            TxtSufijo.Size = new Size(218, 23);
             TxtSufijo.TabIndex = 17;
             // 
             // TxtGeneracion
             // 
-            TxtGeneracion.Location = new Point(277, 140);
+            TxtGeneracion.Location = new Point(194, 84);
+            TxtGeneracion.Margin = new Padding(2, 2, 2, 2);
             TxtGeneracion.Name = "TxtGeneracion";
-            TxtGeneracion.Size = new Size(309, 31);
+            TxtGeneracion.Size = new Size(218, 23);
             TxtGeneracion.TabIndex = 16;
             // 
             // TxtModelo
             // 
-            TxtModelo.Location = new Point(277, 93);
+            TxtModelo.Location = new Point(194, 56);
+            TxtModelo.Margin = new Padding(2, 2, 2, 2);
             TxtModelo.Name = "TxtModelo";
-            TxtModelo.Size = new Size(309, 31);
+            TxtModelo.Size = new Size(218, 23);
             TxtModelo.TabIndex = 15;
             // 
             // TxtModeloGeneracion
             // 
-            TxtModeloGeneracion.Location = new Point(277, 182);
+            TxtModeloGeneracion.Location = new Point(194, 109);
+            TxtModeloGeneracion.Margin = new Padding(2, 2, 2, 2);
             TxtModeloGeneracion.Name = "TxtModeloGeneracion";
-            TxtModeloGeneracion.Size = new Size(309, 31);
+            TxtModeloGeneracion.Size = new Size(218, 23);
             TxtModeloGeneracion.TabIndex = 14;
             // 
             // TxtMarca
             // 
-            TxtMarca.Location = new Point(277, 46);
+            TxtMarca.Location = new Point(194, 28);
+            TxtMarca.Margin = new Padding(2, 2, 2, 2);
             TxtMarca.Name = "TxtMarca";
-            TxtMarca.Size = new Size(309, 31);
+            TxtMarca.Size = new Size(218, 23);
             TxtMarca.TabIndex = 13;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(210, 236);
+            label6.Location = new Point(147, 142);
+            label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(61, 25);
+            label6.Size = new Size(40, 15);
             label6.TabIndex = 12;
             label6.Text = "Sufijo:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(58, 188);
+            label5.Location = new Point(41, 113);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(213, 25);
+            label5.Size = new Size(141, 15);
             label5.TabIndex = 11;
             label5.Text = "Modelo de la generacion:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(167, 146);
+            label4.Location = new Point(117, 88);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(104, 25);
+            label4.Size = new Size(70, 15);
             label4.TabIndex = 10;
             label4.Text = "Generacion:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(193, 99);
+            label3.Location = new Point(135, 59);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(78, 25);
+            label3.Size = new Size(51, 15);
             label3.TabIndex = 9;
             label3.Text = "Modelo:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(207, 52);
+            label2.Location = new Point(145, 31);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(64, 25);
+            label2.Size = new Size(43, 15);
             label2.TabIndex = 8;
             label2.Text = "Marca:";
             // 
@@ -311,9 +333,10 @@
             BtnCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             BtnCancelar.IconSize = 40;
             BtnCancelar.ImageAlign = ContentAlignment.MiddleLeft;
-            BtnCancelar.Location = new Point(659, 411);
+            BtnCancelar.Location = new Point(461, 247);
+            BtnCancelar.Margin = new Padding(2, 2, 2, 2);
             BtnCancelar.Name = "BtnCancelar";
-            BtnCancelar.Size = new Size(135, 46);
+            BtnCancelar.Size = new Size(94, 28);
             BtnCancelar.TabIndex = 7;
             BtnCancelar.Text = "Cancelar";
             BtnCancelar.TextAlign = ContentAlignment.MiddleRight;
@@ -328,21 +351,33 @@
             BtnGuardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             BtnGuardar.IconSize = 40;
             BtnGuardar.ImageAlign = ContentAlignment.MiddleLeft;
-            BtnGuardar.Location = new Point(436, 411);
+            BtnGuardar.Location = new Point(305, 247);
+            BtnGuardar.Margin = new Padding(2, 2, 2, 2);
             BtnGuardar.Name = "BtnGuardar";
-            BtnGuardar.Size = new Size(135, 46);
+            BtnGuardar.Size = new Size(94, 28);
             BtnGuardar.TabIndex = 6;
             BtnGuardar.Text = "Guardar";
             BtnGuardar.TextAlign = ContentAlignment.MiddleRight;
             BtnGuardar.UseVisualStyleBackColor = true;
             BtnGuardar.Click += BtnGuardar_Click;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(24, 10);
+            label7.Name = "label7";
+            label7.Size = new Size(77, 15);
+            label7.TabIndex = 1;
+            label7.Text = "Procesadores";
+            // 
             // Procesadores
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1284, 639);
+            ClientSize = new Size(899, 383);
+            Controls.Add(label7);
             Controls.Add(TabControl);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Procesadores";
             Text = "Procesadores";
             WindowState = FormWindowState.Maximized;
@@ -353,6 +388,7 @@
             TabPageAgregarEditar.ResumeLayout(false);
             TabPageAgregarEditar.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -380,5 +416,6 @@
         private TextBox TxtModelo;
         private TextBox TxtModeloGeneracion;
         private TextBox TxtMarca;
+        private Label label7;
     }
 }

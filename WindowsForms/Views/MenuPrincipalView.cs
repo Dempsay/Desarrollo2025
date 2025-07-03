@@ -50,5 +50,11 @@ namespace WindowsForms
             var procesadoresView = new Procesadores();
             procesadoresView.ShowDialog();
         }
+
+        private void SubmenuPeliculasEF_Click(object sender, EventArgs e)
+        {
+            var peliculasEFView = new PeliculasEFView();
+            peliculasEFView.ShowDialog();
+        }
     }
 }

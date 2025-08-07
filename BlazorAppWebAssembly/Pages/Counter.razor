@@ -13,7 +13,16 @@
 <button class="btn btn-primary" @onclick="IncrementCount">Hazme Click</button>
 
 @code {
+    [SupplyParameterFromQuery]
+    [Parameter]
+    public int StartCount { get; set; }
     private int currentCount = 0;
+
+    protected override void OnInitialized()
+    {
+        currentCount = StartCount;
+        logger.LogInformation($"contador inicializado a {currentCount}");
+    }
 
     private void IncrementCount()
     {

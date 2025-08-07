@@ -8,8 +8,8 @@ namespace WindowsForms.Models
 {
     public class Pais
     {
-        public int Id { get; set; }
-        public string Nombre { get; set; }
+        public int Id { get; set; } = 0;
+        public string Nombre { get; set; } = string.Empty;
         public bool Eliminado { get; set; }
 
         public override string ToString()

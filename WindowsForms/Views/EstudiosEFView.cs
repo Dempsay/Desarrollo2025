@@ -31,7 +31,7 @@ namespace WindowsForms.Views
 
         private async void BtnEliminar_Click_1(object sender, EventArgs e)
         {
-            //checheamos que haya peliculas seleccionadas
+
             if (GridEstudios.RowCount > 0 && GridEstudios.SelectedRows.Count > 0)
             {
                 Estudio estudioSeleccionado = (Estudio)GridEstudios.SelectedRows[0].DataBoundItem;
@@ -41,7 +41,7 @@ namespace WindowsForms.Views
                     if (await estudioService.DeleteAsync(estudioSeleccionado.id))
                     {
                         LabelStatusMessage.Text = $"Estudio {estudioSeleccionado.nombre} eliminado correctamente";
-                        TimerStatusBar.Start(); // Iniciar el temporizador para mostrar el mensaje en la barra de estado
+                        TimerStatusBar.Start(); 
                         ObtenemosEstudios();
                     }
                     else
@@ -99,9 +99,9 @@ namespace WindowsForms.Views
             }
             if (response)
             {
-                EstudioModificado = null; // Reset the modified movie after saving
+                EstudioModificado = null; 
                 LabelStatusMessage.Text = "Estudio guardado correctamente";
-                TimerStatusBar.Start(); // Iniciar el temporizador para mostrar el mensaje en la barra de estado
+                TimerStatusBar.Start(); 
                 ObtenemosEstudios();
                 LimpiarControlesAgregarEditar();
                 TabControl.SelectTab("TabPageLista");
@@ -114,7 +114,7 @@ namespace WindowsForms.Views
 
         private void BtnModificar_Click(object sender, EventArgs e)
         {
-            //checheamos que haya peliculas seleccionadas
+           
             if (GridEstudios.RowCount > 0 && GridEstudios.SelectedRows.Count > 0)
             {
                 EstudioModificado = (Estudio)GridEstudios.SelectedRows[0].DataBoundItem;
@@ -141,7 +141,7 @@ namespace WindowsForms.Views
         private void TimerStatusBar_Tick(object sender, EventArgs e)
         {
             LabelStatusMessage.Text = string.Empty;
-            TimerStatusBar.Stop(); // Detener el temporizador después de mostrar el mensaje
+            TimerStatusBar.Stop(); 
         }
     }
 }

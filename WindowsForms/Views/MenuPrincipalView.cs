@@ -68,5 +68,11 @@ namespace WindowsForms
             var estudiosEFView = new EstudiosEFView();
             estudiosEFView.ShowDialog();
         }
+
+        private void SubMenuActores_Click(object sender, EventArgs e)
+        {
+            var actoresEFView = new ActoresEFView();
+            actoresEFView.ShowDialog();
+        }
     }
 }

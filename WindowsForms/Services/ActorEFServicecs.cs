@@ -16,7 +16,7 @@ namespace WindowsForms.Services
         {
             using (EstudioContext cine = new EstudioContext())
             {
-                return await cine.Actores.ToListAsync();
+                return await cine.Actores.Include(p => p.Pais).ToListAsync();
             }
         }
         public async Task<bool> DeleteAsync(int? id)

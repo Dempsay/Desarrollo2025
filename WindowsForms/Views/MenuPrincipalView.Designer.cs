@@ -35,6 +35,7 @@
             SubmenuFormularioFuentes = new FontAwesome.Sharp.IconMenuItem();
             SubmenuJuegos = new FontAwesome.Sharp.IconMenuItem();
             SubmenuProcesadores = new FontAwesome.Sharp.IconMenuItem();
+            SubMenuEstudios = new FontAwesome.Sharp.IconMenuItem();
             iconMenuItem4 = new FontAwesome.Sharp.IconMenuItem();
             SubmenuFormPeliculasApi = new FontAwesome.Sharp.IconMenuItem();
             SubmenuFormPeliculasADO = new FontAwesome.Sharp.IconMenuItem();
@@ -44,7 +45,7 @@
             SubmenuSalirDelSistema = new FontAwesome.Sharp.IconMenuItem();
             toolStripSeparator1 = new ToolStripSeparator();
             SubmenuAcercaDe = new FontAwesome.Sharp.IconMenuItem();
-            SubMenuEstudios = new FontAwesome.Sharp.IconMenuItem();
+            SubMenuActores = new FontAwesome.Sharp.IconMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -81,7 +82,7 @@
             // 
             // iconMenuItem3
             // 
-            iconMenuItem3.DropDownItems.AddRange(new ToolStripItem[] { SubmenuFormularioFuentes, SubmenuJuegos, SubmenuProcesadores, SubMenuEstudios });
+            iconMenuItem3.DropDownItems.AddRange(new ToolStripItem[] { SubmenuFormularioFuentes, SubmenuJuegos, SubmenuProcesadores, SubMenuEstudios, SubMenuActores });
             iconMenuItem3.IconChar = FontAwesome.Sharp.IconChar.None;
             iconMenuItem3.IconColor = Color.Black;
             iconMenuItem3.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -118,6 +119,16 @@
             SubmenuProcesadores.Size = new Size(228, 30);
             SubmenuProcesadores.Text = "Procesadores";
             SubmenuProcesadores.Click += SubmenuProcesadores_Click;
+            // 
+            // SubMenuEstudios
+            // 
+            SubMenuEstudios.IconChar = FontAwesome.Sharp.IconChar.None;
+            SubMenuEstudios.IconColor = Color.Black;
+            SubMenuEstudios.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            SubMenuEstudios.Name = "SubMenuEstudios";
+            SubMenuEstudios.Size = new Size(228, 30);
+            SubMenuEstudios.Text = "Estudios de Cine";
+            SubMenuEstudios.Click += SubMenuEstudios_Click;
             // 
             // iconMenuItem4
             // 
@@ -203,15 +214,15 @@
             SubmenuAcercaDe.Size = new Size(200, 26);
             SubmenuAcercaDe.Text = "Acerca de...";
             // 
-            // SubMenuEstudios
+            // SubMenuActores
             // 
-            SubMenuEstudios.IconChar = FontAwesome.Sharp.IconChar.None;
-            SubMenuEstudios.IconColor = Color.Black;
-            SubMenuEstudios.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            SubMenuEstudios.Name = "SubMenuEstudios";
-            SubMenuEstudios.Size = new Size(228, 30);
-            SubMenuEstudios.Text = "Estudios de Cine";
-            SubMenuEstudios.Click += SubMenuEstudios_Click;
+            SubMenuActores.IconChar = FontAwesome.Sharp.IconChar.None;
+            SubMenuActores.IconColor = Color.Black;
+            SubMenuActores.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            SubMenuActores.Name = "SubMenuActores";
+            SubMenuActores.Size = new Size(228, 30);
+            SubMenuActores.Text = "Actores";
+            SubMenuActores.Click += SubMenuActores_Click;
             // 
             // MenuPrincipalView
             // 
@@ -248,5 +259,6 @@
         private FontAwesome.Sharp.IconMenuItem SubmenuPeliculasEF;
         private FontAwesome.Sharp.IconMenuItem SubMenuPaisesEF;
         private FontAwesome.Sharp.IconMenuItem SubMenuEstudios;
+        private FontAwesome.Sharp.IconMenuItem SubMenuActores;
     }
 }

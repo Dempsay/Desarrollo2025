@@ -1,18 +1,32 @@
-﻿@page "/counter"
+﻿@page "/contador"
+@inject ILogger<Counter> logger
+<PageTitle>Contador</PageTitle>
 
-<PageTitle>Counter</PageTitle>
-
-<h1>Counter</h1>
-
-<p role="status">Current count: @currentCount</p>
-
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<h1>Contador</h1>
+@if (currentCount < 5)
+{
+    <p role="status">Contador Total: @currentCount</p>
+}else
+{
+    <p role="status" class="text-danger">Current count: @currentCount</p>
+}
+<button class="btn btn-primary" @onclick="IncrementCount">Hazme Click</button>
 
 @code {
+    [SupplyParameterFromQuery]
+    [Parameter]
+    public int StartCount { get; set; }
     private int currentCount = 0;
+
+    protected override void OnInitialized()
+    {
+        currentCount = StartCount;
+        logger.LogInformation($"contador inicializado a {currentCount}");
+    }
 
     private void IncrementCount()
     {
         currentCount++;
+        logger.LogInformation($"contador incrementado a {currentCount}");
     }
 }

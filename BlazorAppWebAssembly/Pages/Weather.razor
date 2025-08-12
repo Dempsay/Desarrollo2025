@@ -1,12 +1,13 @@
-﻿@page "/weather"
+﻿@page "/clima"
 @inject HttpClient Http
 
-<PageTitle>Weather</PageTitle>
+<PageTitle>Clima</PageTitle>
 
-<h1>Weather</h1>
+<h1>Clima</h1>
 
-<p>This component demonstrates fetching data from the server.</p>
-
+<p>Este componente muestrs informacion del clima desde el servidor.</p>
+<hr/>
+<img src="../Img/Clima.png" alt="Weather Image" class="img-fluid" />
 @if (forecasts == null)
 {
     <p><em>Loading...</em></p>

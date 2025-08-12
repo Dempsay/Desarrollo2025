@@ -38,11 +38,12 @@
             iconMenuItem4 = new FontAwesome.Sharp.IconMenuItem();
             SubmenuFormPeliculasApi = new FontAwesome.Sharp.IconMenuItem();
             SubmenuFormPeliculasADO = new FontAwesome.Sharp.IconMenuItem();
+            SubmenuPeliculasEF = new FontAwesome.Sharp.IconMenuItem();
             iconMenuItem2 = new FontAwesome.Sharp.IconMenuItem();
             SubmenuSalirDelSistema = new FontAwesome.Sharp.IconMenuItem();
             toolStripSeparator1 = new ToolStripSeparator();
             SubmenuAcercaDe = new FontAwesome.Sharp.IconMenuItem();
-            SubmenuPeliculasEF = new FontAwesome.Sharp.IconMenuItem();
+            SubMenuPaisesEF = new FontAwesome.Sharp.IconMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -119,7 +120,7 @@
             // 
             // iconMenuItem4
             // 
-            iconMenuItem4.DropDownItems.AddRange(new ToolStripItem[] { SubmenuFormPeliculasApi, SubmenuFormPeliculasADO, SubmenuPeliculasEF });
+            iconMenuItem4.DropDownItems.AddRange(new ToolStripItem[] { SubmenuFormPeliculasApi, SubmenuFormPeliculasADO, SubmenuPeliculasEF, SubMenuPaisesEF });
             iconMenuItem4.IconChar = FontAwesome.Sharp.IconChar.None;
             iconMenuItem4.IconColor = Color.Black;
             iconMenuItem4.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -146,6 +147,16 @@
             SubmenuFormPeliculasADO.Size = new Size(298, 30);
             SubmenuFormPeliculasADO.Text = "Formulario Películas(ADO Net)";
             SubmenuFormPeliculasADO.Click += SubmenuFormPeliculasADO_Click;
+            // 
+            // SubmenuPeliculasEF
+            // 
+            SubmenuPeliculasEF.IconChar = FontAwesome.Sharp.IconChar.None;
+            SubmenuPeliculasEF.IconColor = Color.Black;
+            SubmenuPeliculasEF.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            SubmenuPeliculasEF.Name = "SubmenuPeliculasEF";
+            SubmenuPeliculasEF.Size = new Size(298, 30);
+            SubmenuPeliculasEF.Text = "Formulario PeliculasEF";
+            SubmenuPeliculasEF.Click += SubmenuPeliculasEF_Click;
             // 
             // iconMenuItem2
             // 
@@ -181,15 +192,15 @@
             SubmenuAcercaDe.Size = new Size(200, 26);
             SubmenuAcercaDe.Text = "Acerca de...";
             // 
-            // SubmenuPeliculasEF
+            // SubMenuPaisesEF
             // 
-            SubmenuPeliculasEF.IconChar = FontAwesome.Sharp.IconChar.None;
-            SubmenuPeliculasEF.IconColor = Color.Black;
-            SubmenuPeliculasEF.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            SubmenuPeliculasEF.Name = "SubmenuPeliculasEF";
-            SubmenuPeliculasEF.Size = new Size(298, 30);
-            SubmenuPeliculasEF.Text = "Formulario PeliculasEF";
-            SubmenuPeliculasEF.Click += SubmenuPeliculasEF_Click;
+            SubMenuPaisesEF.IconChar = FontAwesome.Sharp.IconChar.None;
+            SubMenuPaisesEF.IconColor = Color.Black;
+            SubMenuPaisesEF.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            SubMenuPaisesEF.Name = "SubMenuPaisesEF";
+            SubMenuPaisesEF.Size = new Size(298, 30);
+            SubMenuPaisesEF.Text = "Formulario PaisesEF";
+            SubMenuPaisesEF.Click += SubMenuPaisesEF_Click;
             // 
             // MenuPrincipalView
             // 
@@ -197,7 +208,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(890, 447);
             Controls.Add(menuStrip1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "MenuPrincipalView";
             Text = "Pruebas varias en Programación I - 2025";
             WindowState = FormWindowState.Maximized;
@@ -224,5 +235,6 @@
         private FontAwesome.Sharp.IconMenuItem SubmenuJuegos;
         private FontAwesome.Sharp.IconMenuItem SubmenuProcesadores;
         private FontAwesome.Sharp.IconMenuItem SubmenuPeliculasEF;
+        private FontAwesome.Sharp.IconMenuItem SubMenuPaisesEF;
     }
 }

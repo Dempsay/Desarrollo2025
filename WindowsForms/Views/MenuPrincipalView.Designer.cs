@@ -39,11 +39,12 @@
             SubmenuFormPeliculasApi = new FontAwesome.Sharp.IconMenuItem();
             SubmenuFormPeliculasADO = new FontAwesome.Sharp.IconMenuItem();
             SubmenuPeliculasEF = new FontAwesome.Sharp.IconMenuItem();
+            SubMenuPaisesEF = new FontAwesome.Sharp.IconMenuItem();
             iconMenuItem2 = new FontAwesome.Sharp.IconMenuItem();
             SubmenuSalirDelSistema = new FontAwesome.Sharp.IconMenuItem();
             toolStripSeparator1 = new ToolStripSeparator();
             SubmenuAcercaDe = new FontAwesome.Sharp.IconMenuItem();
-            SubMenuPaisesEF = new FontAwesome.Sharp.IconMenuItem();
+            SubMenuEstudios = new FontAwesome.Sharp.IconMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -80,7 +81,7 @@
             // 
             // iconMenuItem3
             // 
-            iconMenuItem3.DropDownItems.AddRange(new ToolStripItem[] { SubmenuFormularioFuentes, SubmenuJuegos, SubmenuProcesadores });
+            iconMenuItem3.DropDownItems.AddRange(new ToolStripItem[] { SubmenuFormularioFuentes, SubmenuJuegos, SubmenuProcesadores, SubMenuEstudios });
             iconMenuItem3.IconChar = FontAwesome.Sharp.IconChar.None;
             iconMenuItem3.IconColor = Color.Black;
             iconMenuItem3.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -94,7 +95,7 @@
             SubmenuFormularioFuentes.IconColor = Color.Black;
             SubmenuFormularioFuentes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             SubmenuFormularioFuentes.Name = "SubmenuFormularioFuentes";
-            SubmenuFormularioFuentes.Size = new Size(218, 26);
+            SubmenuFormularioFuentes.Size = new Size(228, 30);
             SubmenuFormularioFuentes.Text = "Formulario Fuentes";
             SubmenuFormularioFuentes.Click += SubmenuFormularioFuentes_Click;
             // 
@@ -104,7 +105,7 @@
             SubmenuJuegos.IconColor = Color.Black;
             SubmenuJuegos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             SubmenuJuegos.Name = "SubmenuJuegos";
-            SubmenuJuegos.Size = new Size(218, 26);
+            SubmenuJuegos.Size = new Size(228, 30);
             SubmenuJuegos.Text = "Juegos";
             SubmenuJuegos.Click += SubmenuJuegos_Click;
             // 
@@ -114,7 +115,7 @@
             SubmenuProcesadores.IconColor = Color.Black;
             SubmenuProcesadores.IconFont = FontAwesome.Sharp.IconFont.Auto;
             SubmenuProcesadores.Name = "SubmenuProcesadores";
-            SubmenuProcesadores.Size = new Size(218, 26);
+            SubmenuProcesadores.Size = new Size(228, 30);
             SubmenuProcesadores.Text = "Procesadores";
             SubmenuProcesadores.Click += SubmenuProcesadores_Click;
             // 
@@ -134,7 +135,7 @@
             SubmenuFormPeliculasApi.IconColor = Color.Black;
             SubmenuFormPeliculasApi.IconFont = FontAwesome.Sharp.IconFont.Auto;
             SubmenuFormPeliculasApi.Name = "SubmenuFormPeliculasApi";
-            SubmenuFormPeliculasApi.Size = new Size(298, 30);
+            SubmenuFormPeliculasApi.Size = new Size(294, 26);
             SubmenuFormPeliculasApi.Text = "Formulario Películas(Api)";
             SubmenuFormPeliculasApi.Click += SubmenuFormPeliculasApi_Click;
             // 
@@ -144,7 +145,7 @@
             SubmenuFormPeliculasADO.IconColor = Color.Black;
             SubmenuFormPeliculasADO.IconFont = FontAwesome.Sharp.IconFont.Auto;
             SubmenuFormPeliculasADO.Name = "SubmenuFormPeliculasADO";
-            SubmenuFormPeliculasADO.Size = new Size(298, 30);
+            SubmenuFormPeliculasADO.Size = new Size(294, 26);
             SubmenuFormPeliculasADO.Text = "Formulario Películas(ADO Net)";
             SubmenuFormPeliculasADO.Click += SubmenuFormPeliculasADO_Click;
             // 
@@ -154,9 +155,19 @@
             SubmenuPeliculasEF.IconColor = Color.Black;
             SubmenuPeliculasEF.IconFont = FontAwesome.Sharp.IconFont.Auto;
             SubmenuPeliculasEF.Name = "SubmenuPeliculasEF";
-            SubmenuPeliculasEF.Size = new Size(298, 30);
+            SubmenuPeliculasEF.Size = new Size(294, 26);
             SubmenuPeliculasEF.Text = "Formulario PeliculasEF";
             SubmenuPeliculasEF.Click += SubmenuPeliculasEF_Click;
+            // 
+            // SubMenuPaisesEF
+            // 
+            SubMenuPaisesEF.IconChar = FontAwesome.Sharp.IconChar.None;
+            SubMenuPaisesEF.IconColor = Color.Black;
+            SubMenuPaisesEF.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            SubMenuPaisesEF.Name = "SubMenuPaisesEF";
+            SubMenuPaisesEF.Size = new Size(294, 26);
+            SubMenuPaisesEF.Text = "Formulario PaisesEF";
+            SubMenuPaisesEF.Click += SubMenuPaisesEF_Click;
             // 
             // iconMenuItem2
             // 
@@ -192,15 +203,15 @@
             SubmenuAcercaDe.Size = new Size(200, 26);
             SubmenuAcercaDe.Text = "Acerca de...";
             // 
-            // SubMenuPaisesEF
+            // SubMenuEstudios
             // 
-            SubMenuPaisesEF.IconChar = FontAwesome.Sharp.IconChar.None;
-            SubMenuPaisesEF.IconColor = Color.Black;
-            SubMenuPaisesEF.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            SubMenuPaisesEF.Name = "SubMenuPaisesEF";
-            SubMenuPaisesEF.Size = new Size(298, 30);
-            SubMenuPaisesEF.Text = "Formulario PaisesEF";
-            SubMenuPaisesEF.Click += SubMenuPaisesEF_Click;
+            SubMenuEstudios.IconChar = FontAwesome.Sharp.IconChar.None;
+            SubMenuEstudios.IconColor = Color.Black;
+            SubMenuEstudios.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            SubMenuEstudios.Name = "SubMenuEstudios";
+            SubMenuEstudios.Size = new Size(228, 30);
+            SubMenuEstudios.Text = "Estudios de Cine";
+            SubMenuEstudios.Click += SubMenuEstudios_Click;
             // 
             // MenuPrincipalView
             // 
@@ -236,5 +247,6 @@
         private FontAwesome.Sharp.IconMenuItem SubmenuProcesadores;
         private FontAwesome.Sharp.IconMenuItem SubmenuPeliculasEF;
         private FontAwesome.Sharp.IconMenuItem SubMenuPaisesEF;
+        private FontAwesome.Sharp.IconMenuItem SubMenuEstudios;
     }
 }

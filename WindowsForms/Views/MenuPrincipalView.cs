@@ -62,5 +62,11 @@ namespace WindowsForms
             var paisesEFView = new PaisesEFView();
             paisesEFView.ShowDialog();
         }
+
+        private void SubMenuEstudios_Click(object sender, EventArgs e)
+        {
+            var estudiosEFView = new EstudiosEFView();
+            estudiosEFView.ShowDialog();
+        }
     }
 }
